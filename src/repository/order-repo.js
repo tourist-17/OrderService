@@ -42,7 +42,7 @@ class OrderRepository {
     try {
       const orderList = await Order.findAll({
         where:{
-            userId:data.userId
+            userId:data.userid
         }
       });
       return orderList;

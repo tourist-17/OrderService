@@ -81,7 +81,8 @@ class OrderController {
 
   async get(req, res) {
     try {
-      const response = await orderService.get(req.query);
+      // console.log(req.headers['userid']);
+      const response = await orderService.get(req.headers);
       return res.status(StatusCodes.OK).json({
         message: "Successfully Fetched Order",
         success: true,

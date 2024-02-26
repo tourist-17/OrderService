@@ -1,5 +1,5 @@
 const express = require("express");
-const  OrderController  = require("../../controllers/order-controllers");
+const OrderController = require("../../controllers/order-controllers");
 // const { createChannel } = require("../../utils/messageQueue");
 
 // const channel = await createChannel();
